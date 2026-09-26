@@ -375,7 +375,7 @@ server <- function(input, output, session) {
       selectInput("city_selector", "Editing city",
                   choices = setNames(df$id, df$city), selected = id),
       textInput("edit_city", "City name", value = row$city),
-      sliderInput("edit_capacity", "Venue capacity", min = 500, max = 20000,
+      sliderInput("edit_capacity", "Venue capacity", min = 500, max = 5000,
                   value = row$capacity, step = 50),
       sliderInput("edit_fill", "Target fill rate", min = 0, max = 1,
                   value = row$fill, step = 0.01),
