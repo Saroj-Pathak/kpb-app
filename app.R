@@ -82,7 +82,7 @@ ui <- page_navbar(
       sidebar = sidebar(
         width = 300,
         h4("Current Tour"),
-        textInput("tour_name", NULL, value = "KPB Australia Tour"),
+        textInput("tour_name", NULL, value = "KPB Tour"),
         textInput("currency", "Currency symbol", value = "$"),
         actionButton("reset_model", "Reset to example", class = "btn-outline-secondary w-100"),
         br(), br(),
